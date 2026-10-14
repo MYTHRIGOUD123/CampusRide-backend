@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @GetMapping("/api/home")
+    @GetMapping("/")
     public String home() {
         return "Welcome to CampusRide Backend!";
     }
