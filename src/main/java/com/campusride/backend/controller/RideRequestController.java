@@ -12,7 +12,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/ride-requests")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://campus-ride-frontend.vercel.app"
+})
 public class RideRequestController {
 
     private final RideRequestService rideRequestService;
